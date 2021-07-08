@@ -35,6 +35,11 @@ client.on("message", msg => {
     msg.reply("https://discord.com/api/oauth2/authorize?client_id=862348917098283058&permissions=8&scope=bot")
   }
 })
+client.on("message", msg => {
+  if (msg.content === "/YT"){
+    msg.reply("https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
+  }
+})
 client.login(process.env.TOKEN)
 const mySecret = process.env['TOKEN']
 
