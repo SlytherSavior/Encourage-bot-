@@ -35,7 +35,7 @@ client.on("message", msg => {
 })
 client.on("message", msg => {
   if(msg.content === "$yt"){
-    msg.reply("https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
+    msg.reply("Subscribe to this legendary youtuber !!    https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
   }
 })
 client.on("message", msg => {
