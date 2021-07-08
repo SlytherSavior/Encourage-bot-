@@ -25,7 +25,7 @@ client.on("message", msg => {
 client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$help") {
-    msg.reply("i am and encourager and conversator bot , do $inspire to get quotes , my prefix is $")
+    msg.reply("***I am an encourager and conversator bot , do $inspire to get quotes , my prefix is $***")
   }
 })
 client.on("message", msg => {
@@ -35,7 +35,7 @@ client.on("message", msg => {
 })
 client.on("message", msg => {
   if(msg.content === "$yt"){
-    msg.reply("https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qAt")
+    msg.reply("https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
   }
 })
 client.on("message", msg => {
