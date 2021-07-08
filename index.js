@@ -23,7 +23,7 @@ client.on("message", msg => {
   }
 })
 client.on("message", msg => {
-  if(msg.authoer.bot) return
+  if(msg.author.bot) return
   if(msg.content === "$help") {
     msg.reply("i am and encourager and conversator bot , do $inspire to get quotes , my prefix is $")
   }
