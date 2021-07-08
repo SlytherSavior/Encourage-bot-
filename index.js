@@ -37,7 +37,7 @@ client.on("message", msg => {
 })
 client.on("message", msg => {
   if (msg.content === "/YT"){
-    msg.reply("https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
+    msg.reply("GO fast and sub to this legend https://www.youtube.com/channel/UCKGhP5D5l5UriOde9tGR8qA")
   }
 })
 client.login(process.env.TOKEN)
