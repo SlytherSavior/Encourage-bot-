@@ -25,7 +25,7 @@ client.on("message", msg => {
 client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$help") {
-    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by Slytherr . I give inspiring quotes to you.                        Commands - $help,$yt,$inspire,$i am sad,$invite.  Note : The bot is still in development.***")
+    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by @Slytherrrr#1693 . I give inspiring quotes to you.                        Commands - $help,$yt,$inspire,$i am sad,$invite.  Note : The bot is still in development.***")
   }
 })
 client.on("message", msg => {
