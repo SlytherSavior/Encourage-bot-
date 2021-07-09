@@ -25,7 +25,7 @@ client.on("message", msg => {
 client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$help") {
-    msg.reply("***I am an encourager and conversator bot , do $inspire to get quotes , my prefix is $***")
+    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by Slytherr . I give inspiring quotes to you.                        Commands                                       $help                                         $yt                                              $inspire                                         $i am sad .  Note : The bot is still in development.***")
   }
 })
 client.on("message", msg => {
