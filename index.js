@@ -13,7 +13,8 @@ function getQuote()  {
 }
 
 client.on("ready", () => {
-  console.log('Logged in as ${client.user.tag}!')
+  console.log('Logged in as ${client.user.tag}!');
+  client.user.setActivity('Prefix is:$help, { type: "WATCHING" }).catch(console.error)
 })
 client.on("message", msg => {
   if(msg.author.bot) return
