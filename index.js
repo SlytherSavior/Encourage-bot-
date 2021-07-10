@@ -57,6 +57,11 @@ client.on("message", msg => {
   }
 })
 client.on("message", msg => {
+  if(msg.content === "$shreetika"){
+    msg.reply("shreetika is the sister of the developer of this bot ")
+  }
+})
+client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$i am sad"){
     msg.reply("https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
