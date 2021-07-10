@@ -30,11 +30,7 @@ function getQuote()  {
 client.on("ready", () => {
   console.log('Logged in as ${client.user.tag}!')
   client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
-
-  command(client,'help', message => {
-    message.channel.send('comin soon')
-  })
-})
+ })
 
 client.on("message", msg => {
   if(msg.author.bot) return
