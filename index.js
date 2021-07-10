@@ -2,6 +2,15 @@ const Discord = require("discord.js")
 const fetch = require ("node-fetch")
 const client = new Discord.Client()
 
+const sadWords = ["sad","depressed","unhappy", "angry"]
+
+const encouragements = [
+  "Cheer up!",
+  "Hang in there.",
+  "Dont lose hope",
+  "You are a great person / bot!"
+]
+
 function getQuote()  {
   return fetch("https://zenquotes.io/api/random")
    .then(res => {
@@ -42,6 +51,11 @@ client.on("message", msg => {
   if(msg.content === "$i am sad"){
     msg.reply("https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
   }
+
+ if (sadWords.some(word => msg.content.includes(word))) {
+   const encouragements = encouragements[Math.floor(MAth.random() * encouragements.length)]
+   msg.reply(encouragement)
+ } 
 })
 client.login(process.env.TOKEN)
 const mySecret = process.env['TOKEN']
