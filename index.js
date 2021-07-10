@@ -2,6 +2,8 @@ const Discord = require("discord.js")
 const fetch = require ("node-fetch")
 const client = new Discord.Client()
 
+const command = require('./command')
+
 const sadWords = ["sad","depressed","unhappy", "angry"]
 
 const encouragements = [
@@ -28,17 +30,16 @@ function getQuote()  {
 client.on("ready", () => {
   console.log('Logged in as ${client.user.tag}!')
   client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
+
+  command(client,'help', message => {
+    message.channel.send('comin soon')
+  })
 })
+
 client.on("message", msg => {
   if(msg.author.bot) return
   if (msg.content === "$inspire") {
     getQuote().then(quote => msg.channel.send(quote))
-  }
-})
-client.on("message", msg => {
-  if(msg.author.bot) return
-  if(msg.content === "$help") {
-    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by @Slytherrrr#1693 . I give inspiring quotes to you. Commands - $help,$yt,$inspire,$i am sad,$invite.   Note : The bot is still in development. New update - The bot now replies to sad words !!, $hello too .***")
   }
 })
 client.on("message", msg => {
