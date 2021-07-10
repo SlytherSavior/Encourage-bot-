@@ -30,6 +30,10 @@ function getQuote()  {
 client.on("ready", () => {
   console.log('Logged in as ${client.user.tag}!')
   client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
+
+  command(client, 'ping', message => {
+    message.channel.send('pong')
+  })
  })
 
 client.on("message", msg => {
