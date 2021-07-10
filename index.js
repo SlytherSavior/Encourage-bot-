@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 const fetch = require ("node-fetch")
 const client = new Discord.Client()
-
+const botconfig = require("../config.json");
 const command = require('./command')
 
 const sadWords = ["sad","depressed","unhappy", "angry"]
