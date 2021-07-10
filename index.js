@@ -53,7 +53,7 @@ client.on("message", msg => {
   }
 
  if (sadWords.some(word => msg.content.includes(word))) {
-   const encouragements = encouragements[Math.floor(MAth.random() * encouragements.length)]
+   const encouragement = encouragements[Math.floor(MAth.random() * encouragements.length)]
    msg.reply(encouragement)
  } 
 })
