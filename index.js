@@ -62,6 +62,11 @@ client.on("message", msg => {
    msg.reply(encouragement)
  } 
 })
+client.on("message", msg => {
+  if(msg.content === "$test"){
+    msg.reply("lol , <https://discord.com/api/oauth2/authorize?client_id=862348917098283058&permissions=8&scope=bot>")
+  }
+})
 client.login(process.env.TOKEN)
 const mySecret = process.env['TOKEN']
 
