@@ -11,7 +11,7 @@ const encouragements = [
   "You are a great person / bot!",
   "Dont forget you have a goal",
   "One day you will be a great person",
-  "Just belive in yoursled and keep moving forward",
+  "Just belive in yourslef and keep moving forward",
   "IF youre angry think is it worth it , If youre sad think why shall you be sad when you can be happy , if youre depressed think why to waste your time , if you are unhappy !cheer upp!!"
 ]
 
