@@ -8,7 +8,11 @@ const encouragements = [
   "Cheer up!",
   "Hang in there.",
   "Dont lose hope",
-  "You are a great person / bot!"
+  "You are a great person / bot!",
+  "Dont forget you have a goal",
+  "One day you will be a great person",
+  "Just belive in yoursled and keep moving forward",
+  "IF youre angry think is it worth it , If youre sad think why shall you be sad when you can be happy , if youre depressed think why to waste your time , if you are unhappy !cheer upp!!"
 ]
 
 function getQuote()  {
@@ -34,7 +38,7 @@ client.on("message", msg => {
 client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$help") {
-    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by @Slytherrrr#1693 . I give inspiring quotes to you.                        Commands - $help,$yt,$inspire,$i am sad,$invite.  Note : The bot is still in development.***")
+    msg.reply("***Thanks for getting this bot . Its just a simple bot developed by @Slytherrrr#1693 . I give inspiring quotes to you.    /n                    Commands - $help,$yt,$inspire,$i am sad,$invite.   Note : The bot is still in development. /n New update - The bot now replies to sad words !!.***")
   }
 })
 client.on("message", msg => {
@@ -48,6 +52,7 @@ client.on("message", msg => {
   }
 })
 client.on("message", msg => {
+  if(msg.author.bot) return
   if(msg.content === "$i am sad"){
     msg.reply("https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
   }
