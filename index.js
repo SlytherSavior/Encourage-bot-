@@ -18,7 +18,7 @@ client.on("ready", () => {
     **$i am sad** - Gives you a happy music 
     **$hello** - responds xD
     ***The bot also responds to sad messages and is still in development***
-    ***Developer - Slytherrrr#1693 
+    ***Developer*** - **Slytherrrr#1693**
     `)
   })
  })
