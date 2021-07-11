@@ -9,7 +9,7 @@ client.on("ready", () => {
 
   command(client, 'help', message => {
     message.channel.send(`
-    These are my supported commands:
+    ```These are my supported commands:
     
     **$help** - Displays the help menu 
     **$invite** - Invite link for the bot
@@ -18,7 +18,7 @@ client.on("ready", () => {
     **$i am sad** - Gives you a happy music 
     **$hello** - responds xD
     ***The bot also responds to sad messages and is still in development***
-    ***Developer*** - **Slytherrrr#1693**
+    ***Developer*** - **Slytherrrr#1693**````
     `)
   })
  })
