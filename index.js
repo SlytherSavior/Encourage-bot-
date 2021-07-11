@@ -8,7 +8,12 @@ client.on("ready", () => {
   client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
 
   command(client, 'help', message => {
-    message.channel.send('coming soon stay tuned')
+    message.channel.send(`
+    These are my supported commands:
+    
+    **$help** - Displays the help menu 
+    **$add** <num1> <num2> - Adds two numbers
+    **$sub** <num1> <num2> - Subtracts two numbers`)
   })
  })
 
