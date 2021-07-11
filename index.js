@@ -67,7 +67,7 @@ client.on("message", msg => {
 })
 client.on("message", msg => {
   if(msg.content === "$hello"){
-    msg.reply("hello , how are you doing")
+    msg.reply("```hello , how are you doing```")
   }
 })
 client.on("message", msg => {
