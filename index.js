@@ -12,8 +12,14 @@ client.on("ready", () => {
     These are my supported commands:
     
     **$help** - Displays the help menu 
-    **$add** <num1> <num2> - Adds two numbers
-    **$sub** <num1> <num2> - Subtracts two numbers`)
+    **$invite** - Invite link for the bot
+    **$yt** - Yt link of the developer
+    **$inspire** - Gives you inspiring quotes
+    **$i am sad** - Gives you a happy music 
+    **$hello** - responds xD
+    ***The bot also responds to sad messages and is still in development***
+    ***Developer - Slytherrrr#1693 
+    `)
   })
  })
 
