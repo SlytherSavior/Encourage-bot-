@@ -1,8 +1,17 @@
 const Discord = require("discord.js")
 const fetch = require ("node-fetch")
 const client = new Discord.Client()
-const config = "config"
 const command = require('./command')
+
+client.on("ready", () => {
+  console.log('Logged in as ${client.user.tag}!')
+  client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
+
+  command(client, 'ping', message => {
+    message.channel.send('pong')
+  })
+ })
+
 
 const sadWords = ["sad","depressed","unhappy", "angry"]
 
@@ -27,14 +36,7 @@ function getQuote()  {
    })
 }
 
-client.on("ready", () => {
-  console.log('Logged in as ${client.user.tag}!')
-  client.user.setActivity('$help', { type: "WATCHING" }).catch(console.error)
 
-  command(client, 'ping', message => {
-    message.channel.send('pong')
-  })
- })
 
 client.on("message", msg => {
   if(msg.author.bot) return
