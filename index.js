@@ -17,7 +17,7 @@ client.on("ready", () => {
     **$inspire** - Gives you inspiring quotes
     **$i am sad** - Gives you a happy music 
     **$hello** - responds xD
-    ***The bot also responds to sad messages and is still in development***
+    ***The bot also responds to sad messages***
     ***Developer*** - **Slytherrrr#1693**
     ` )
   })
