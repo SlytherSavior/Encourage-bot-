@@ -14,7 +14,7 @@ client.on("ready", () => {
     **$help** - Displays the help menu 
     **$invite** - Invite link for the bot
     **$yt** - Yt link of the developer
-    **$inspire** - Gives you inspiring quotes
+    **$ins/inspire** - Gives you inspiring quotes
     **$i am sad** - Gives you a happy music 
     **$hello** - responds xD
     ***The bot also responds to sad messages***
@@ -47,7 +47,12 @@ function getQuote()  {
    })
 }
 
-
+client.on("message", msg => {
+  if(msg.author.bot) return
+  if (msg.content === "$ins") {
+    getQuote().then(quote => msg.channel.send(quote))
+  }
+})
 
 client.on("message", msg => {
   if(msg.author.bot) return
