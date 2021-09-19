@@ -83,7 +83,8 @@ client.on("message", msg => {
 client.on("message", msg => {
   if(msg.author.bot) return
   if(msg.content === "$i am sad"){
-    msg.reply("https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
+    msg.reply("dont be sad, please listen to this happy musci ( no advertisement ) 
+              https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
   }
 
  if (sadWords.some(word => msg.content.includes(word))) {
