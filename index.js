@@ -87,7 +87,6 @@ client.on("message", msg => {
   }
   client.on("message".msg=>{
     if(msg.content === "i'm losing hope"){
-      const encouragement = encouragements[Math.floor(Math.random() * encouragements.length)]
             msg.reply(encouragement)
     }
   })
