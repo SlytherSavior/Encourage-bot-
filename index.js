@@ -85,6 +85,10 @@ client.on("message", msg => {
   if(msg.content === "$i am sad"){
     msg.reply("dont be sad, please listen to this happy music https://www.youtube.com/watch?v=BnYSSMbZdaY&t=1st")
   }
+  client.on("message".msg=>{
+    if(msg.content === "i'm losing hope"){
+      const encouragement = encouragements[Math.floor(Math.random() * encouragements.length)]
+      msg.reply(encouragement)
 
  if (sadWords.some(word => msg.content.includes(word))) {
    const encouragement = encouragements[Math.floor(Math.random() * encouragements.length)]
